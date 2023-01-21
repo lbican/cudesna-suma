@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Čudesna šuma</title>
+    <meta name="author" content="Luka Bićan">
+    <meta name="description" content="Čudesna šuma webpage">
+
+    <!-- Bootstrap files -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/944c7bf8f6.js" crossorigin="anonymous"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light p-0 sticky-top">
+        <div class="container-xxl p-0">
+            <div class="brand-wrapper">
+            <a class="navbar-brand position-relative d-inline-block m-0" href="index.html">
+                <img src="assets/logo.png" alt="Čudesna šuma" class="d-inline-block align-text-top">
+            </a>
+            </div>
+            <button class="navbar-toggler m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link mx-2" aria-current="page" href="#about">O nama</a>
+                    <a class="nav-link mx-2" href="#products">Proizvodi</a>
+                    <a class="nav-link mx-2" href="#contact">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+            <div class="container-xxl p-0">
+            <div class="pt-2 divider rounded-top"></div>
+            <!-- Hero -->
+            <div class="text-start bg-image rounded-bottom">
+                <div class="h-100 rounded-bottom" style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div class="d-flex justify-content-start align-items-center p-5">
+                        <div class="text-white">
+                            <h1 class="mb-3">Čudesna Šuma</h1>
+                            <h4 class="mb-3">Ekološka proizvodnja hrane po principima biodinamike i prirodnog poljodjelstva</h4>
+                            <a class="btn btn-outline-light btn-lg" href="#about" role="button">Saznajte više</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero -->
+        </div>
+
+        <section class="container-xxl px-0 py-lg-5 py-sm-2" id="products">
+
+            <h2>Kategorije proizvoda</h2>
+            <!-- Cards -->
+            <div class="row g-lg-5 g-3">
+                <div class="col-lg-4 col-md-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="assets/fruits-and-vegetables.jpg" class="card-img-top" alt="Voće i povrće">
+                            <div class="rounded-circle position-absolute arrow bg-light p-3">
+                                <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Voće i povrće</h5>
+                            <p class="card-text">Najsvježije voće i povrće prirodnog uzgoja</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="assets/juice.webp" class="card-img-top" alt="Sokovi">
+                            <div class="rounded-circle position-absolute arrow bg-light p-3">
+                                <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Prirodni sokovi</h5>
+                            <p class="card-text">Najukusniji prirodni sokovi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="assets/zimnica.jpg" class="card-img-top" alt="Zimnice">
+                            <div class="rounded-circle position-absolute arrow bg-light p-3">
+                                <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Zimnice</h5>
+                            <p class="card-text">Najbolje zimnice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards -->
+        </section>
+
+        <section class="container-xxl px-0 py-lg-5 py-sm-2" id="about">
+            <div class="row g-2">
+                <div class="col-lg-7">
+                    <h2>O nama</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        At in tellus integer feugiat scelerisque varius morbi enim.
+                        Elementum nisi quis eleifend quam. Scelerisque in dictum non consectetur.
+                        Accumsan lacus vel facilisis volutpat est velit egestas dui id.
+                        Fermentum et sollicitudin ac orci phasellus.
+                        Sed viverra tellus in hac habitasse platea dictumst.
+                        Pretium viverra suspendisse potenti nullam ac tortor vitae.
+                        Hac habitasse platea dictumst vestibulum. Nulla aliquet enim tortor at.
+                        Nullam vehicula ipsum a arcu cursus vitae congue mauris.
+                        Imperdiet proin fermentum leo vel orci porta.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <figure>
+                    <img class="shadow-1 rounded" src="assets/forest-img.png" style="max-width: 100%;" alt="forest">
+                        <figcaption>Image generated using AI</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container-fluid bg-light">
+        <section class="container-xxl px-0 py-5" id="contact">
+            <h2>Kontaktirajte nas</h2>
+            <!-- Contact form -->
+            <div class="row">
+                <div class="col-lg-5 col-sm-12">
+                    <img src="assets/contact.svg" alt="Contact us image" style="max-width: 100%;">
+                </div>
+                <div class="col-lg-7 col-sm-12">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Vaše ime</label>
+                            <input type="email" class="form-control" id="nameInput" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email adresa</label>
+                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nećemo nikad dijeliti vašu adresu sa drugima</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageInput" class="form-label">Vaša poruka</label>
+                            <textarea class="form-control" id="messageInput" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Pristajem na pravila</label>
+                        </div>
+                        <button type="submit" class="btn btn-green">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-fluid parallax">
+        <section class="container-xxl px-0 pt-5">
+            <h2>Pronađite nas</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.903771468639!2d18.75599021575673!3d45.61257773155103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475cdd77bcb72a41%3A0xfbb92daec8b566bd!2sOPG%20Cudesna%20Suma!5e0!3m2!1shr!2shr!4v1674319548844!5m2!1shr!2shr"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+
+
+
+    <div class="container-fluid bg-light">
+        <footer class="container-xxl pt-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Brzi linkovi</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-muted">O nama</a></li>
+                        <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-muted">Kontakt</a></li>
+                        <li class="nav-item mb-2"><a href="#products" class="nav-link p-0 text-muted">Proizvodi</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Korisne stranice</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3"></div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Pretplatite se na naš newsletter</h5>
+                        <p>Dobivajte mjesečna ažuriranja i korisne savjete 😊</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-green" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2023 Luka Bićan, All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+</html>
