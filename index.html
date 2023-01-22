@@ -9,7 +9,7 @@
 
     <!-- Bootstrap files -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/944c7bf8f6.js" crossorigin="anonymous"></script>
@@ -31,24 +31,42 @@
                 <img src="assets/logo.png" alt="Čudesna šuma" class="d-inline-block align-text-top">
             </a>
             </div>
-            <button class="navbar-toggler m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler m-1" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link mx-2" aria-current="page" href="#about">O nama</a>
-                    <a class="nav-link mx-2" href="#products">Proizvodi</a>
-                    <a class="nav-link mx-2" href="#contact">Kontakt</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="#about">O nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#contact">Kontakt</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Proizvodi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="subpages/fruits-and-vegetables.html">Voće i povrće</a></li>
+                            <li><a class="dropdown-item" href="subpages/juices.html">Prirodni sokovi</a></li>
+                            <li><a class="dropdown-item" href="#">Zimnice</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <main class="container-fluid">
-            <div class="container-xxl p-0">
+            <section class="container-xxl p-0">
             <div class="pt-2 divider rounded-top"></div>
             <!-- Hero -->
-            <div class="text-start bg-image rounded-bottom">
+            <div class="text-start hero-image bg-image rounded-bottom">
                 <div class="h-100 rounded-bottom" style="background-color: rgba(0, 0, 0, 0.6);">
                     <div class="d-flex justify-content-start align-items-center p-5">
                         <div class="text-white">
@@ -60,7 +78,7 @@
                 </div>
             </div>
             <!-- Hero -->
-        </div>
+        </section>
 
         <section class="container-xxl px-0 py-lg-5 py-sm-2" id="products">
 
@@ -68,6 +86,7 @@
             <!-- Cards -->
             <div class="row g-lg-5 g-3">
                 <div class="col-lg-4 col-md-4">
+                    <a href="subpages/fruits-and-vegetables.html">
                     <div class="card">
                         <div class="position-relative">
                             <img src="assets/fruits-and-vegetables.jpg" class="card-img-top" alt="Voće i povrće">
@@ -80,9 +99,11 @@
                             <p class="card-text">Najsvježije voće i povrće prirodnog uzgoja</p>
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div class="col-lg-4 col-md-4">
+                    <a href="subpages/juices.html">
                     <div class="card">
                         <div class="position-relative">
                             <img src="assets/juice.webp" class="card-img-top" alt="Sokovi">
@@ -95,9 +116,11 @@
                             <p class="card-text">Najukusniji prirodni sokovi</p>
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div class="col-lg-4 col-md-4">
+                    <a href="#">
                     <div class="card">
                         <div class="position-relative">
                             <img src="assets/zimnica.jpg" class="card-img-top" alt="Zimnice">
@@ -110,13 +133,14 @@
                             <p class="card-text">Najbolje zimnice</p>
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
             <!-- Cards -->
         </section>
 
         <section class="container-xxl px-0 py-lg-5 py-sm-2" id="about">
-            <div class="row g-2">
+            <div class="row g-4">
                 <div class="col-lg-7">
                     <h2>O nama</h2>
                     <p>
@@ -132,6 +156,10 @@
                         Nullam vehicula ipsum a arcu cursus vitae congue mauris.
                         Imperdiet proin fermentum leo vel orci porta.
                     </p>
+                    <h3>Naša misija</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        At in tellus integer feugiat scelerisque varius morbi enim.</p>
                 </div>
                 <div class="col-lg-5">
                     <figure>
@@ -171,14 +199,14 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Pristajem na pravila</label>
                         </div>
-                        <button type="submit" class="btn btn-green">Submit</button>
+                        <button type="submit" class="btn btn-green">Pošalji</button>
                     </form>
                 </div>
             </div>
         </section>
     </div>
 
-    <div class="container-fluid parallax">
+    <div class="container-fluid bg-light">
         <section class="container-xxl px-0 pt-5">
             <h2>Pronađite nas</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.903771468639!2d18.75599021575673!3d45.61257773155103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475cdd77bcb72a41%3A0xfbb92daec8b566bd!2sOPG%20Cudesna%20Suma!5e0!3m2!1shr!2shr!4v1674319548844!5m2!1shr!2shr"
@@ -231,12 +259,16 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
                 <p>&copy; 2023 Luka Bićan, All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
                     <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                    <li class="ms-3">
+                        <a class="link-dark" target="_blank" href="https://www.facebook.com/opgmarioromulic/">
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </footer>
