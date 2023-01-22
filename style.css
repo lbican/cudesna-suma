@@ -70,16 +70,20 @@ a .card{
     background-position: center;
 }
 
-.juice-img{
-    background-image: url('assets/juice.webp');
-}
-
 .hero-image{
     background-image: url('assets/nature.jpg');
 }
 
 .fruits-image{
     background-image: url('assets/fruits-and-vegetables.jpg');
+}
+
+.juice-img{
+    background-image: url('assets/juice.webp');
+}
+
+.zimnice-img{
+    background-image: url("assets/zimnica.jpg");
 }
 
 .divider{
