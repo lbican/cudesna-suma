@@ -86,10 +86,6 @@ a .card{
     background-image: url("assets/zimnica.jpg");
 }
 
-.divider{
-    background-color: #35CB67;
-}
-
 .card{
     transition: all 0.5s;
 }
