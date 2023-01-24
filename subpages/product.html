@@ -67,7 +67,7 @@
         <div class="article">
             <div class="row">
                 <div class="col-lg-7 col-md-6">
-                    <img class="img-fluid rounded" src="https://via.placeholder.com/1366x768?text=Product+image" alt="Product image">
+                    <img class="img-fluid rounded" src="../assets/products/1366x768.png" alt="Product image">
                 </div>
                 <div class="col-lg-5 col-md-6 d-flex flex-column justify-content-between">
                     <div class="product-info">
@@ -76,7 +76,13 @@
                             Dried noodles can be made fluffy by varnishing with plain vinegar.
                         </p>
                         <div class="my-2">
-                            <strong>Cijena: </strong>
+                            <div class="mb-3 w-50">
+                                <label for="amount" class="form-label">Količina</label>
+                                <input type="number" min="0" class="form-control" id="amount">
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <strong>Cijena /kom: </strong>
                             <strong class="bg-light p-2 rounded-pill">5.99 &#8364;</strong>
                         </div>
                     </div>
